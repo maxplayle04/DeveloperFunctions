@@ -1,0 +1,61 @@
+{
+
+  // This file should not be modified by the user of the application, and should only be modified in any other instance
+  // with the instruction of the Application Developer. It contains settings vital to one of the libraries used within
+  // the application, and if this file is modified incorrectly, the application may not be able to function correctly.
+  
+  // When working with ConsoleColor objects, please input the Enum integer value of the associated colour. These numbers
+  // can be found at: https://docs.microsoft.com/en-us/dotnet/api/system.consolecolor?view=netcore-3.1
+
+  "DeveloperFunctionsConfiguration": {
+
+		// Used for diagnosing issues with Developer Functions itself, doesn't have any effect on the host application.
+		"DeveloperFunctionsRuntime": {
+			"runtimeDebuggingAssistance": true, // Default: true
+			"signature":  "/this-works/", // Do not touch this. Default: "/this-works/"
+			"moreConsoleData": false // Default: false
+		},
+
+		// Error Management related settings
+		"ErrorManagement": {
+			"useLegacyErrorManagement":  true // Default: true (has no current effect)
+		},
+
+		// Host Application related settings
+		"Application": {
+			"debugOrDeveloperEnabled": true // Default: true
+		},
+		
+		// Console-related settings
+		"Console": {
+			// Relating to dfConsole.writeProcessInformation
+			"WriteProcessInformation": {
+				"TimeInTransmission": true // Default: true
+			},
+			// Relating to dfCOnsole.processInformation
+			"ProcessInformation": {
+				"defaultForeColor": 14 // Default: 14
+			},
+			// Relating to dfConsole.printStandoutLine
+			"PrintStandoutLine": {
+				"lineLength": 120, // Default: 120
+				"foreColor": 12, // Default: 12
+				"backColor": 15, // Default: 15
+				"character": "#" // Default: "#"
+			},
+			// Relating to dfConsole.noteToDeveloper
+			"NoteToDeveloper": {
+				"foreColor": 14, // Default: 14
+				"backColor": 12, // Default: 12
+				"alwaysSendToStorage": true // Default: true
+			}
+		},
+		// Relating to file-service-related commands.
+		"FileService": {
+			// Relating to FileService.Delete
+			"deleteFile":{
+				"promptForConfirmation": true // Default: true
+			}
+		}
+	}	
+}
