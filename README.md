@@ -1,4 +1,4 @@
-# DeveloperFunctions
+# Developer Functions
 The Developer Functions library written by Max Playle 
 --
 Welcome to the Developer Functions GitHub Repository!
