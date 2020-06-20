@@ -1,31 +1,36 @@
 {
+
+  "PLEASE_READ_ME_RIGHT_NOW_ON_GITHUB_THANK_YOU": "Please DO NOT use this as your configuration file, as I have likely added more content."
+
   "DeveloperFunctionsConfiguration": {
 
 		"DeveloperFunctionsRuntime": {
 			"runtimeDebuggingAssistance": true, 
 			"signature":  "/this-works/", 
-			"moreConsoleData": false 
+			"moreConsoleData": false
 		},
 
-
+		// Error Management related settings
 		"ErrorManagement": {
-			"useLegacyErrorManagement":  true
+			"useLegacyErrorManagement":  true 
 		},
 
-	
+		
 		"Application": {
 			"debugOrDeveloperEnabled": true 
 		},
 		
-	
+		
 		"Console": {
-
+			
 			"WriteProcessInformation": {
-				"TimeInTransmission": true 
-			},
+				"TimeInTransmission": true, 
+				"fallbackSource": "Information" 
+				},
 			
 			"ProcessInformation": {
-				"defaultForeColor": 14
+				"defaultForeColor": 14, 
+				"fallbackSource": "Information" 
 			},
 			
 			"PrintStandoutLine": {
@@ -34,9 +39,9 @@
 				"backColor": 15, 
 				"character": "#" 
 			},
-			
+		
 			"NoteToDeveloper": {
-				"foreColor": 14,
+				"foreColor": 14, 
 				"backColor": 12, 
 				"alwaysSendToStorage": true
 			}
