@@ -11,7 +11,7 @@ be available, which will be more feature-rich.
 the data for your error (this will not get in the way) (this will be true by default)
 - Updated startup procedure, pulling new Error Management configuration objects.
 - Added functions DeveloperFunctions.ErrorManagement.PrintErrorInformation with the following combenations of perams:
-> PrintErrorInformation(EMExceptionData exceptionData)
-> PrintErrorInformation(string ExceptionName, string ExceptionStackTrace, string ExceptionMessage)
-> PrintErrorInformation(Exception data)
+  - PrintErrorInformation(EMExceptionData exceptionData)
+  - PrintErrorInformation(string ExceptionName, string ExceptionStackTrace, string ExceptionMessage)
+  - PrintErrorInformation(Exception data)
 - Added Type 'EMExceptionData' which can hold data about Exceptions without transmitting the exception (can also accept regular string inputs for sending to EM without actually throwing an exception) 
