@@ -15,3 +15,4 @@ the data for your error (this will not get in the way) (this will be true by def
   - `PrintErrorInformation(string ExceptionName, string ExceptionStackTrace, string ExceptionMessage)`
   - `PrintErrorInformation(Exception data)`
 - Added Type 'EMExceptionData' which can hold data about Exceptions without transmitting the exception (can also accept regular string inputs for sending to EM without actually throwing an exception) 
+**Warning: You will need to add the object `["DeveloperFunctionsConfiguration"]["ErrorManagement"]["addWhittyComments"]` to your configuration file, unless you have overwritten your configuration file with the one provided in the download, otherwise, Developer Functions will crash on startup!**
